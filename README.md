@@ -2,7 +2,15 @@
 
 Tek CNC dik işleme makinesi için Türkçe, responsive üretim planlama MVP’si. React + Vite arayüzü, Express API ve kalıcı SQLite veritabanı. Node.js 24 kullanın (yerleşik `node:sqlite` gerekir).
 
-## Bilgisayarınıza indirme
+## Node.js kurmadan Windows’ta çalıştırma
+
+**Windows 10/11, 64 bit Intel/AMD** için [hazır paketi indirin](https://github.com/erdemborekci00021-crypto/deneme1/raw/refs/heads/main/downloads/atolye-windows-x64.zip). ZIP dosyasını tamamen çıkarın ve içindeki **BASLAT.cmd** dosyasına çift tıklayın. Hazır olduğunda tarayıcınız otomatik açılır. Bu pakette Node.js çalışma motoru ve tüm bağımlılıklar dahildir; bilgisayarınıza Node.js kurmak veya npm çalıştırmak gerekmez. İnternet bağlantısı da gerekmez.
+
+Veriler çıkarılan klasördeki `data/workshop.sqlite` dosyasında kalır. Güncellemeden önce uygulamayı kapatıp `data` klasörünü yedekleyin. Windows ARM veya 32 bit için bu paket uygun değildir. Paket kod imzası taşımaz. Windows çalışma motoru resmi Node.js v24.21.0 kaynağından SHA-256 doğrulamasıyla alınır; lisansı paketin içinde korunur.
+
+Paket üretimi geliştiriciler için: `npm run build` ardından `python3 scripts/package-windows.py`. Script kilit dosyasından üretim bağımlılıklarını ayrı geçici klasöre kurar, motorun resmi ve sabitlenmiş özetlerini karşılaştırır, PE/x64 formatını ve ZIP bütünlüğünü doğrular; gerçek atölye verilerini pakete almaz. Paket `downloads/atolye-windows-x64.zip` olarak oluşturulur.
+
+## Kaynak kodunu bilgisayarınıza indirme
 
 GitHub üzerinde **Code → Download ZIP** seçeneğini kullanın ve ZIP dosyasını çıkarın. Node.js 24 veya daha yeni bir sürümü kurun. Windows’ta `BASLAT-WINDOWS.cmd` dosyasını çalıştırın; macOS/Linux’ta klasör içinde `bash baslat.sh` komutunu çalıştırın. İlk açılışta bağımlılıklar indirilir ve arayüz derlenir. Sunucu hazır olduğunda tarayıcınızda `http://localhost:3000` adresini açın. Ayrıntılar `ONCE-OKUYUN.txt` dosyasında.
 

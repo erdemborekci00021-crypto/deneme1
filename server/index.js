@@ -298,7 +298,7 @@ app.use((err, req, res, next) => {
     .status(err.status || 400)
     .json({ error: err.message || "İşlem tamamlanamadı." });
 });
-app.listen(Number(process.env.PORT || 3000), "0.0.0.0", (err) => {
+app.listen(Number(process.env.PORT || 3000), process.env.HOST || "0.0.0.0", (err) => {
   if (err) {
     console.error(err.message);
     process.exit(1);

@@ -1,0 +1,33 @@
+ATÖLYE — NODE.JS KURULUMU GEREKTİRMEYEN WINDOWS PAKETİ
+
+Windows 10/11, 64 bit Intel/AMD bilgisayarlar içindir.
+
+1. ZIP dosyasına sağ tıklayın → Tümünü ayıkla.
+2. Çıkan klasörün içinde BASLAT.cmd dosyasına çift tıklayın.
+3. Uygulama hazır olduğunda varsayılan tarayıcınız otomatik açılır.
+   Açılmazsa tarayıcınıza http://127.0.0.1:3000 yazın.
+4. Siyah pencereyi kullanım sırasında açık bırakın.
+5. Kapatmak için pencereyi kapatın veya Ctrl+C tuşlarına basın.
+
+Node.js veya npm kurmanız gerekmez. İnternet bağlantısı gerekmez.
+Çalışma motoru runtime klasörüne dahildir; bu klasörü silmeyin.
+Bu bir web uygulamasıdır; ekranı tarayıcıda çalışır.
+
+Veriler ve teknik resimler data/workshop.sqlite içinde saklanır.
+Klasörü Program Files gibi yazma izni gerektiren bir yere değil,
+Belgeler veya Masaüstü gibi yazabildiğiniz bir yere çıkarın.
+
+YEDEK: Uygulamayı kapattıktan sonra data klasörünü başka bir yere kopyalayın.
+GÜNCELLEME: Önce data klasörünü yedekleyin. Yeni sürümü ayrı klasöre çıkarın,
+data klasörünü yeni sürüme taşıyın; boş veritabanıyla mevcut verileri ezmeyin.
+
+Port 3000 dolu hatası alırsanız uygulamanın başka pencerede açık olup
+olmadığını kontrol edin. Açık olan Atölye penceresini kullanın veya kapatın.
+
+Windows güvenlik uyarısı görülebilir; bu paket kod imzası taşımamaktadır.
+Paketin içindeki çalışma motoru resmi nodejs.org kaynağından indirilmiş
+ve SHA-256 özeti ile doğrulanmıştır. Kontrol dosyası RUNTIME-SHA256.txt'tir.
+
+İlk açılışta dört örnek iş oluşturulur. Gerçek atölye kayıtları bu dağıtıma
+dahil edilmez. Çoklu makine, kullanıcı girişi ve setup optimizasyonu bu
+MVP sürümünde bulunmaz. Ayrıntılar README.md dosyasındadır.
