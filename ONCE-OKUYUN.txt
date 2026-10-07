@@ -1,0 +1,21 @@
+ATÖLYE — CNC ÜRETİM PLANLAMA
+
+Bu paket masaüstüne kurulmuş bir EXE değil, bilgisayarınızda çalışan bir web uygulamasıdır.
+
+1. Node.js 24 veya daha yeni sürümü kurun (nodejs.org).
+2. ZIP dosyasını bir klasöre çıkarın.
+3. Windows: BASLAT-WINDOWS.cmd dosyasını çalıştırın.
+   macOS/Linux: terminalde klasöre gidin ve bash baslat.sh çalıştırın.
+4. Sunucu “Atölye hazır” dediğinde tarayıcınıza http://localhost:3000 yazın.
+5. Kapatmak için terminalde Ctrl+C kullanın.
+
+İlk çalıştırmada bağımlılıkları indirmek için internet gerekir.
+Veriler ve yüklenen teknik resimler data/workshop.sqlite içinde tutulur.
+İlk açılışta örnek işler oluşturulur. Gerçek kayıtlarınız GitHub paketine dahil değildir.
+Yedeklemek için uygulamayı kapatın ve data klasörünü kopyalayın.
+
+Elle çalıştırma:
+  npm ci
+  npm run dev
+
+Ayrıntılar: README.md
